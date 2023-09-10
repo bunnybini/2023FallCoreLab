@@ -31,7 +31,7 @@
   height: 100%;
   overflow: scroll;
   /* background-color: rgb(27, 28, 27); */
-  background-color: darkgray;
+  background-color: rgb(187, 223, 247);
   color: ivory;
 }
 
@@ -43,7 +43,7 @@
   height: 100%;
   overflow: scroll;
   background-color: ivory;
-  color: rgb(27, 28, 27);
+  color: rgb(242, 200, 198);
 }
 
 @font-face {
