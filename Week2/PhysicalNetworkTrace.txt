@@ -1,1 +1,29 @@
 PHYSICAL NETWORK TRACE NOTES
+Bini Park
+
+- I traced one of my favorite animation program "Shaun the Sheep"
+https://www.shaunthesheep.com 
+
+1  sax1v1r (192.168.1.1)  3.757 ms  1.983 ms  1.847 ms
+ 2  cpe-74-71-64-1.nyc.res.rr.com (74.71.64.1)  13.275 ms  34.637 ms  21.409 ms
+ 3  lag-61.nyclnyrg01h.netops.charter.com (68.173.200.100)  11.785 ms  12.943 ms  16.908 ms
+ 4  lag-101.nyclnyrg01r.netops.charter.com (68.173.198.32)  24.199 ms  16.696 ms  22.786 ms
+ 5  lag-29.nwrknjmd67w-bcr00.netops.charter.com (107.14.19.24)  14.214 ms
+    lag-19.nwrknjmd67w-bcr00.netops.charter.com (66.109.6.78)  17.993 ms
+    lag-29.nwrknjmd67w-bcr00.netops.charter.com (107.14.19.24)  20.409 ms
+ 6  lag-400.bpr03nwrknjmd.netops.charter.com (66.109.9.171)  14.855 ms
+    lag-401.bpr03nwrknjmd.netops.charter.com (66.109.10.179)  15.688 ms
+    lag-400.bpr03nwrknjmd.netops.charter.com (66.109.9.171)  13.415 ms
+ 7  charter.ier01.ewr30.ntwk.msn.net (104.44.44.61)  18.593 ms  19.851 ms  17.736 ms
+ 8  ae27-0.ear04.nyc30.ntwk.msn.net (104.44.231.62)  18.713 ms  52.096 ms  24.141 ms
+ 9  be-25-0.ibr02.nyc30.ntwk.msn.net (104.44.33.209)  95.468 ms  83.667 ms
+    be-25-0.ibr01.nyc30.ntwk.msn.net (104.44.33.217)  96.220 ms
+10  be-7-0.ibr02.lon22.ntwk.msn.net (104.44.18.155)  80.749 ms
+    be-10-0.ibr01.lon22.ntwk.msn.net (104.44.18.153)  88.210 ms
+    be-7-0.ibr02.lon22.ntwk.msn.net (104.44.18.155)  89.032 ms
+11  ae104-0.icr03.lon22.ntwk.msn.net (104.44.32.11)  81.272 ms
+    ae124-0.icr03.lon22.ntwk.msn.net (104.44.32.13)  112.345 ms
+    ae102-0.icr02.lon22.ntwk.msn.net (104.44.21.88)  81.476 ms
+
+    - The main locations were 
+    1. 

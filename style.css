@@ -7,6 +7,11 @@
   overflow: hidden;
 }
 
+a {
+  text-decoration: none; /* Remove underline */
+  color: ivory; /* Change text color to black (replace #000 with the color of your choice) */
+}
+
 .noiseoverlay {
   margin: 0;
   position: absolute;
