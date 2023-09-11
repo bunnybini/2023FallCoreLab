@@ -4,26 +4,83 @@ Bini Park
 - I traced one of my favorite animation program "Shaun the Sheep"
 https://www.shaunthesheep.com 
 
-1  sax1v1r (192.168.1.1)  3.757 ms  1.983 ms  1.847 ms
- 2  cpe-74-71-64-1.nyc.res.rr.com (74.71.64.1)  13.275 ms  34.637 ms  21.409 ms
- 3  lag-61.nyclnyrg01h.netops.charter.com (68.173.200.100)  11.785 ms  12.943 ms  16.908 ms
- 4  lag-101.nyclnyrg01r.netops.charter.com (68.173.198.32)  24.199 ms  16.696 ms  22.786 ms
- 5  lag-29.nwrknjmd67w-bcr00.netops.charter.com (107.14.19.24)  14.214 ms
-    lag-19.nwrknjmd67w-bcr00.netops.charter.com (66.109.6.78)  17.993 ms
-    lag-29.nwrknjmd67w-bcr00.netops.charter.com (107.14.19.24)  20.409 ms
- 6  lag-400.bpr03nwrknjmd.netops.charter.com (66.109.9.171)  14.855 ms
-    lag-401.bpr03nwrknjmd.netops.charter.com (66.109.10.179)  15.688 ms
-    lag-400.bpr03nwrknjmd.netops.charter.com (66.109.9.171)  13.415 ms
- 7  charter.ier01.ewr30.ntwk.msn.net (104.44.44.61)  18.593 ms  19.851 ms  17.736 ms
- 8  ae27-0.ear04.nyc30.ntwk.msn.net (104.44.231.62)  18.713 ms  52.096 ms  24.141 ms
- 9  be-25-0.ibr02.nyc30.ntwk.msn.net (104.44.33.209)  95.468 ms  83.667 ms
-    be-25-0.ibr01.nyc30.ntwk.msn.net (104.44.33.217)  96.220 ms
-10  be-7-0.ibr02.lon22.ntwk.msn.net (104.44.18.155)  80.749 ms
-    be-10-0.ibr01.lon22.ntwk.msn.net (104.44.18.153)  88.210 ms
-    be-7-0.ibr02.lon22.ntwk.msn.net (104.44.18.155)  89.032 ms
-11  ae104-0.icr03.lon22.ntwk.msn.net (104.44.32.11)  81.272 ms
-    ae124-0.icr03.lon22.ntwk.msn.net (104.44.32.13)  112.345 ms
-    ae102-0.icr02.lon22.ntwk.msn.net (104.44.21.88)  81.476 ms
+ 1  (192.168.1.1) Origin Computer
+ 2  (74.71.64.1)        - NewYork ,40.713192, 74.006065
+ 3  (68.173.200.100)    - NewYork ,40.713192, 74.006065
+ 4  (68.173.198.32)     - NewYork ,40.713192, 74.006065
+ 5  (107.14.19.24)      - NewYork ,40.713192, 74.006065
+ 6  (66.109.9.171)      - llinois/Naperville, 41.770999, -88.153042
+    (66.109.10.179)     - Texas/Houston ,29.76303, -95.362061
+    (66.109.9.171)      - llinois/Naperville, 41.770999, -88.153042
+ 7  (104.44.44.61)      - New Jersey/Piscataway, 40.540094, 74.466195
+ 8  (104.44.231.62)     - NewYork ,40.713192, 74.006065
+ 9  (104.44.33.209)     - NewYork ,40.713192, 74.006065
+10   (104.44.18.155)    - England/London, 51.50853, -0.12574
+11  (104.44.32.11)      - England/London, 51.50853, -0.12574
+    
 
-    - The main locations were 
-    1. 
+    - Main locations were 
+    1. NewYork
+    2. llinois
+    3. Texas
+    4. New Jersey
+    5. England
+
+~/~
+1. NewYork  (40.713192, 74.006065)
+This location can be found right beside the City Hall Park which is a public park surrounding New York City Hall in the Civic Center of Manhattan. 
+
+- Who built it?
+
+In 1802 the site was selected for the new City Hall designed by John McComb and Frances Magnin, the land developed into a formal park. 
+McComb designed an iron fence with marble piers topped by lamps for the park's perimeter in 1820. 
+
+- fun fact
+City Hall Park is one of those rare quarters of New York – a green space that has remained green since it was first laid down by the city planners.
+~/~
+
+~/~
+2. llinois/Naperville (41.770999, -88.153042)
+The coordinate is located on the south eagle street in Illinois, close to Municipal Center of Naperville city in Llinois.
+
+Naperville is famous?
+yes, Naperville is home to Moser Tower and Millennium Carillon, one of the world's four largest carillons.
+It is also home to an extensive parks and forest preserve network, including Centennial Beach.
+
+- interesting  fact
+Since there's a road nearby, there's a policy of calling Animal Control if a deceased stray cat or dog is in the roadway or on private property.
+~/~
+
+
+~/~
+3. Texas/Houston (29.76303, -95.362061)
+The coordinate is located on the Congress Street, right beside the Market Square Park.
+A permanent City Hall and Market House were built in Market Square. Other two-story stone and brick buildings were built in Market Square in the late 1860s and early 1870.
+
+What do they sell in market square?
+Fresh bakes, fresh produce, groceries, wines and spirits, toiletries
+
+- fun fact
+There's dog run space in the Market Square Park
+~/~
+
+~/~
+4. New Jersey/Piscataway (40.540094, 74.466195)
+This place is located in the middle of the buildings next to Doty Street, with the most distinguished building being the Piscataway Recycling Center and Piscataway Housing Department.
+
+How old is Piscataway NJ?
+Piscataway was founded in 1666, and officially incorporated in 1798 (WOW)
+
+- Interesting fact
+There's a large sports club department nearby, which includes a soccer club and a golf course
+~/~
+
+~/~
+5. England/London (51.50853, -0.12574)
+From my perspective, I believe this location is near Charing Cross in the UK, close to Duncannon Street. According to the map, it appears to be a subway station.
+
+This place is the center of the city, with a crowded restaurant scene, as one might expect. 
+
+-Fun fact
+The restaurant 'Halfway To Heaven,' right next to Charing Cross, hosts a fantastic matinee drag show every Saturday.
+~/~
