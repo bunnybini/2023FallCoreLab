@@ -1,30 +1,81 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: akira;
+  /* font-family: Dancing Script; */
   line-height: 1.6;
   text-align: center;
   overflow: hidden;
 }
 
+/* @font-face {
+  font-family: akira;
+  src: url(Basteleur-Bold.otf);
+} */
+
+.topside,
+.bottomside {
+  height: 50vh;
+  width: 100%;
+}
+
+.topside {
+  background: #323232;
+}
+
+.bottomside {
+  background: rgb(45, 45, 45);
+}
+
 .img {
-  width: 150px;
-  height: auto;
+  width: 98%;
+  height: 50vh;
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   margin-left: auto;
   margin-right: auto;
+  position: relative; /* Add this line */
+  filter: grayscale(200%);
+  mix-blend-mode: difference;
 }
 
 .img .text {
-  visibility: hidden;
-  background-color: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Add a background with some transparency */
+  color: white;
+  font-size: 40px;
   text-align: center;
-  position: relative;
+  position: absolute; /* Use absolute positioning to overlay the text */
+  top: 50%; /* Position the text vertically in the middle */
+  left: 30%;
+  right: 30%;
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear; /* Add transition for smooth visibility */
+}
+
+.img:hover {
+  filter: grayscale(0%);
+  /* mix-blend-mode: multiply; */
 }
 
 .img:hover .text {
   visibility: visible;
+  opacity: 1;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  font-family: "Dancing Script", cursive;
 }
