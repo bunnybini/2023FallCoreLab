@@ -17,12 +17,14 @@ p {
   margin-top: 0;
   margin-bottom: 20px;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
 .head {
   text-align: center;
   position: relative;
-}
-
-.headerobjectswrapper {
 }
 
 .subhead {
@@ -31,11 +33,11 @@ p {
   border-top: 2px solid #2f2f2f;
   padding: 12px 0 12px 0;
 }
-.weatherforcastbox {
+.backbox {
   position: relative;
   width: 12%;
   left: 10px;
-  border: 3px double #2f2f2f;
+  /* border: 3px double #2f2f2f; */
   padding: 10px 15px 10px 15px;
   line-height: 20px;
   display: inline-block;
@@ -48,8 +50,6 @@ p {
   word-spacing: -0.31em;
   display: inline-block;
   margin: 30px 2% 0 2%;
-}
-.collumns {
 }
 
 .collumn {
