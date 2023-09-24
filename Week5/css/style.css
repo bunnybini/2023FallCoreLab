@@ -1,0 +1,94 @@
+a {
+  text-decoration: none;
+}
+
+.homeimage {
+  max-width: 100%; /* Limit the image width to its container */
+  max-height: 100vh; /* Limit the image height to its container */
+  position: relative; /* Set relative positioning for the parent container */
+}
+
+.fullimage {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  /* align-items: center; Center vertically */
+  height: 100vh; /* Make the container full height of the viewport */
+  position: relative; /* Set relative positioning for the parent container */
+}
+
+.noiseoverlay {
+  margin: 0;
+  position: absolute; /* Position the overlay absolutely */
+  z-index: 2; /* Set a higher z-index to place it on top of the image */
+  height: 100vh;
+  width: 100%;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.scanoverlay {
+  margin: 0;
+  position: absolute;
+  z-index: 30;
+  height: 100vh;
+  width: 100%;
+  mix-blend-mode: darken;
+  opacity: 60%;
+  pointer-events: none;
+}
+
+.fadein {
+  background: white;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  animation-name: fadeIn;
+  animation-direction: normal;
+  animation-duration: 3000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Place the text above the image and other overlays */
+}
+
+/* Style for the text */
+.overlay-text h1 {
+  color: white; /* Adjust the text color as needed */
+  font-size: 180px; //*Adjust the font size as needed */
+}
+
+.bottom_ani {
+  animation-duration: 3s;
+  animation-name: bottomslide;
+  animation-timing-function: ease;
+}
+
+@keyframes bottomslide {
+  from {
+    transform: translateY(100%);
+    /* You can also add opacity animation if needed */
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
