@@ -92,3 +92,49 @@ a {
     transform: translateY(0%);
   }
 }
+
+/* body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-container {
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100vh;
+  position: relative;
+}
+
+.ani_0,
+.ani_5 {
+  animation-duration: 0.5s;
+  animation-name: ANI_01;
+  animation-timing-function: ease;
+}
+@keyframes ANI_01 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.ani_1,
+.ani_7 {
+  animation-duration: 1s;
+  animation-name: ANI_01;
+  animation-timing-function: ease;
+}
+@keyframes ANI_01 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
