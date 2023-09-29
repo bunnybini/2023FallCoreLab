@@ -1,0 +1,79 @@
+.zoom {
+  position: sticky;
+  top: 0.5vh;
+  will-change: transform;
+  width: 100%;
+  transform: scale(2.2);
+}
+.zoomtext {
+  position: sticky;
+  top: 50%;
+  left: 50%; /* Center horizontally within the container */
+  /* transform: translate(-50%, -50%); */
+  will-change: transformtext;
+  text-align: center;
+  /* color: white;  */
+  /* font-size: 10rem; */
+}
+
+p {
+  z-index: 2;
+  text-align: center; /* Center text within the container */
+  color: rgb(157, 94, 220);
+  /* background-color: black; */
+  padding: 10px;
+  opacity: 1;
+}
+
+h1 {
+  /* position: relative;  */
+  /* top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); */
+  z-index: 2;
+  text-align: center; /* Center text within the container */
+  color: white; /* Text color, you can adjust this */
+  background-color: black; /* Background color to make the text more visible */
+  /* padding: 10px; */
+  opacity: 1;
+  /*transition: opacity 0.5s; */
+}
+
+/* .zoom h1 .show {
+  opacity: 1;
+} */
+
+.container {
+}
+
+.bottom {
+  height: 200vh;
+  position: relative;
+  /* transform: scale(2.2); */
+}
+
+.top {
+  height: 0vh;
+}
+
+.wrap {
+  height: 400vh;
+  position: relative; /* Add relative positioning to the container */
+}
+
+section {
+  /* display: grid; */
+  /* place-items: center; */
+  /* align-content: center; */
+  /* justify-content: center; */
+  min-height: 100vh;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s; /* You can add a transition for a smooth fade-in effect */
+}
+
+.show {
+  opacity: 1;
+}
