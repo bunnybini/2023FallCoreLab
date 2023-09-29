@@ -13,7 +13,7 @@
   will-change: transformtext;
   text-align: center;
   /* color: white;  */
-  /* font-size: 10rem; */
+  font-size: 10rem;
 }
 
 p {
@@ -71,9 +71,11 @@ section {
 
 .hidden {
   opacity: 0;
-  transition: opacity 0.5s; /* You can add a transition for a smooth fade-in effect */
+  transition: translateX(-100%);
+  transition: all 1s; /* You can add a transition for a smooth fade-in effect */
 }
 
 .show {
   opacity: 1;
+  filter: blur(0);
 }

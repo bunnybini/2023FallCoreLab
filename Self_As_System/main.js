@@ -14,7 +14,7 @@ addEventListener("scroll", (e) => {
   if (scrollTop > start && scrollTop < stop) {
     const scale = Math.max(2.2 - (scrollTop - start) / 500, 1);
     zoom.style.transform = `scale(${scale})`;
-    zoom.style.transformtext = `scale(${scale})`;
+    // zoom.style.transformtext = `scale(${scale})`;
     // Adjust the font size of the text based on the scale
     const fontSize = 10 - (scrollTop - start) / 500; // Adjust this value as needed
     zoomText.style.fontSize = `${fontSize}rem`;
