@@ -18,11 +18,11 @@ addEventListener("scroll", (e) => {
     // Adjust the font size of the text based on the scale
     const fontSize = 10 - (scrollTop - start) / 500; // Adjust this value as needed
     zoomText.style.fontSize = `${fontSize}rem`;
+    const textPosition = -(scrollTop - scrolltext);
+    zoomText.style.transform = `translateY(${textPosition}px)`;
   }
 
   if (3052 < scrollTop && scrollTop <= 3743) {
-    const textPosition = -(scrollTop - scrolltext);
-    zoomText.style.transform = `translateY(${textPosition}px)`;
   }
 });
 

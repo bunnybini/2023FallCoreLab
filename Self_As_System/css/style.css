@@ -1,3 +1,8 @@
+body {
+  /* background-image: url(/Self_As_System/images/background.png); */
+  background-image: linear-gradient(#e5c8f6, #fff6ee, #ffffff);
+}
+
 .zoom {
   position: sticky;
   top: 0.5vh;
@@ -5,6 +10,7 @@
   width: 100%;
   transform: scale(2.2);
 }
+
 .zoomtext {
   position: sticky;
   top: 50%;
@@ -43,13 +49,17 @@ h1 {
   opacity: 1;
 } */
 
-.container {
-}
-
 .bottom {
   height: 200vh;
   position: relative;
+  padding: 400px;
   /* transform: scale(2.2); */
+}
+
+.bottom .container {
+  margin: 0;
+  padding: 0;
+  width: auto;
 }
 
 .top {
@@ -73,6 +83,15 @@ section {
   opacity: 0;
   transition: translateX(-100%);
   transition: all 1s; /* You can add a transition for a smooth fade-in effect */
+}
+
+.hidden p {
+  z-index: 2;
+  text-align: center; /* Center text within the container */
+  color: rgb(157, 94, 220);
+  font-size: 30px;
+  padding: 10px;
+  opacity: 1;
 }
 
 .show {
