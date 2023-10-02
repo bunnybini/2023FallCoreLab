@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Rockwell";
+}
+h1 {
+  font-size: 3rem;
+  border-bottom: 1px solid coral;
+  /* color: aqua; */
+}
+h2 {
+  font-size: 1.5rem;
+  color: black;
+  margin-top: 100px;
+}
+
+p {
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.h1-tittle {
+  color: palevioletred;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 40vh;
+  /* background-color: bisque; */
+  background-image: linear-gradient(#e5c8f6, #fff6ee, #ffffff);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.body-tittle {
+  background-image: url("./Image/paw0.png");
+  background-size: 100%;
+}
+.container {
+  margin-top: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.btn {
+  /* margin-top: 10px; */
+  margin-top: 130px;
+  border: none;
+  /* border-radius: 5px; */
+  /* box-shadow: 0 0 10px 2px; */
+  font-size: 20px; /* Increase the font size for bigger buttons */
+  /* padding: 20px 35px; */
+  width: 195px;
+  height: 60px;
+  background-color: transparent;
+  background-image: url(/Self_As_System/images/smallbutton.png);
+  background-repeat: no-repeat;
+}
+
+.btn .btn-next {
+  padding: 10px 20px; /* Adjust the padding for the button */
+  width: auto; /* Allow the button to adjust its width based on content */
+  float: right; /* Float the button to the right */
+  background-color: lightgrey;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  /* border-color: peachpuff; */
+  /* background-color: peru; */
+  /* color: palevioletred; */
+  mix-blend-mode: multiply;
+}
+
+.btn-next:hover {
+  border-color: lightgray;
+  background-color: gray;
+  /* color: lightsteelblue; */
+}
+
+.btn-answer-selected {
+  /* background-color: coral; */
+  mix-blend-mode: multiply;
+}
+
+.center-tittle {
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  /* -ms-transform: translate(-30%, -50%); */
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  width: 750px;
+  height: 490px;
+  /* max-height: 100%; */
+  /* max-width: 100%; */
+  background-image: url(/Self_As_System/images/Tv.png);
+  background-repeat: no-repeat;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 200px;
+  /* box-shadow: 0 0 10px 2px; */
+}
+
+.container-tittle {
+  width: 800px;
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: 400px;
+  /* background-color: white; */
+  padding: 10px;
+  border-radius: 5px;
+  /* box-shadow: 0 0 10px 2px; */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.answer {
+  cursor: pointer;
+}
+
+/* #result-container {
+  margin-top: 50px;
+} */
+
+/* #result-container { */
+/* margin-top: 50px;
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  background-repeat: no-repeat; */
+/* background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); */
+/* } */
+
+/* .image-1 {
+  background-image: url("/Image/FirstPage-01.jpg");
+}
+
+.image-2 {
+  background-image: url("/Image/disappointed-gummy-bear.jpg");
+}
+
+.image-3 {
+  background-image: url("/Image/happy-gummy-bear.jpg");
+} */
