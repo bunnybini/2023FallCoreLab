@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Rockwell";
+}
+
 body {
   /* background-image: url(/Self_As_System/images/background.png); */
   background-image: linear-gradient(#e5c8f6, #fff6ee, #ffffff);
@@ -8,6 +15,8 @@ body {
 a {
   text-decoration: none;
   color: white;
+  /* font-size: 100px; */
+  position: relative;
 }
 
 .zoom {
@@ -25,8 +34,8 @@ a {
   /* transform: translate(-50%, -50%); */
   will-change: transformtext;
   text-align: center;
-  /* color: white;  */
-  font-size: 10rem;
+  color: #e0caff;
+  font-size: 120px;
 }
 
 p {
@@ -36,16 +45,6 @@ p {
   /* background-color: black; */
   padding: 10px;
   opacity: 1;
-}
-
-.zoomtext h1 {
-  z-index: 2;
-  text-align: center; /* Center text within the container */
-  color: white; /* Text color, you can adjust this */
-  background-color: black; /* Background color to make the text more visible */
-  /* padding: 10px; */
-  opacity: 1;
-  /*transition: opacity 0.5s; */
 }
 
 /* .zoom h1 .show {
@@ -121,17 +120,6 @@ section {
   position: relative;
 }
 
-/* .box {
-  height: 200px;
-  background-color: plum;
-  position: absolute;
-  bottom: -800px;
-  left: 0;
-  width: 100%;
-  /* display: flex;
-  align-items: flex-end; */
-/* }  */
-
 .bottomstart img {
   max-width: 400px; /* Set a maximum width for the image */
   height: auto; /* Maintain the image's aspect ratio */
@@ -143,20 +131,8 @@ section {
 .image-container {
   position: relative;
   text-align: center;
+  margin-top: 500px;
 }
-
-/* .centered-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px 30px;
-  /* background-color: #007bff; Customize button background color */
-/* background-image: url(/Self_As_System/images/button.png); */
-/* color: #fff;  */
-/* border: none;
-  cursor: pointer; */
-/* }  */
 
 .image-button {
   position: absolute;
@@ -166,6 +142,7 @@ section {
   /* padding: 100px 220px; */
   width: 485px;
   height: 215px;
+  background-color: transparent;
   background-image: url(/Self_As_System/images/button.png);
   background-size: cover; /* Make sure the background image covers the button */
   border: none;
@@ -191,6 +168,5 @@ section {
 }
 
 .image-button:hover {
-  filter: blur(2px);
   mix-blend-mode: multiply;
 }

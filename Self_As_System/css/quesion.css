@@ -12,12 +12,22 @@ h1 {
 h2 {
   font-size: 1.5rem;
   color: black;
-  margin-top: 100px;
+  margin-top: 65px;
+  width: 650px;
+  padding-left: 100px;
 }
 
+a {
+  text-decoration: none;
+  color: darkorchid;
+}
 p {
   font-size: 1.5rem;
   color: gray;
+  padding: auto;
+  margin: 0 auto;
+  width: 600px;
+  line-height: 60px;
 }
 
 .h1-tittle {
@@ -40,12 +50,31 @@ body {
   background-repeat: no-repeat;
 }
 
-.body-tittle {
-  background-image: url("./Image/paw0.png");
-  background-size: 100%;
+input {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: block;
+  /* Your other styles for input */
+  width: 200px;
+  height: 50px;
 }
-.container {
-  margin-top: 20px;
+
+/* Adjust styles for the endingBox */
+.endingBox {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-end; /* Align to the bottom */
+  margin-top: 20px; /* Adjust top margin as needed */
+  position: absolute; /* Position relative to the parent container */
+  bottom: 100px; /* Adjust bottom position as needed */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+/* Adjust button styles */
+.endingBtn {
+  font-size: 20px;
+  width: 150px; /* Adjust button width as needed */
 }
 
 .hide {
@@ -53,13 +82,27 @@ body {
 }
 
 .btn {
-  /* margin-top: 10px; */
+  margin: 10px;
   margin-top: 130px;
+  margin-bottom: 10px;
+  /* margin: auto; */
   border: none;
-  /* border-radius: 5px; */
-  /* box-shadow: 0 0 10px 2px; */
-  font-size: 20px; /* Increase the font size for bigger buttons */
+
+  font-size: 16px; /* Increase the font size for bigger buttons */
   /* padding: 20px 35px; */
+  width: 195px;
+  height: 60px;
+  background-color: transparent;
+  background-image: url(/Self_As_System/images/smallbutton.png);
+  background-repeat: no-repeat;
+  /* padding: 20px; */
+}
+
+.btn-guess-deco {
+  /* margin-top: 10px; */
+  margin-top: 30px;
+  border: none;
+  font-size: 20px; /* Increase the font size for bigger buttons */
   width: 195px;
   height: 60px;
   background-color: transparent;
@@ -67,26 +110,27 @@ body {
   background-repeat: no-repeat;
 }
 
-.btn .btn-next {
-  padding: 10px 20px; /* Adjust the padding for the button */
+.btn-next {
+  padding: 15px 10px; /* Adjust the padding for the button */
+  margin: 68px 340px 0px;
   width: auto; /* Allow the button to adjust its width based on content */
-  float: right; /* Float the button to the right */
-  background-color: lightgrey;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
+  float: right;
+  /* position: absolute; */
+  background-color: #f8f6cf;
+  box-shadow: 0px -2px 5px #e5c799 inset;
+  box-shadow: 0px -1px 5px #e4c1ae;
+  border: none;
+  border-radius: 100px;
+  /* position: absolute; */
 }
 
 .btn:hover {
-  /* border-color: peachpuff; */
-  /* background-color: peru; */
-  /* color: palevioletred; */
   mix-blend-mode: multiply;
 }
 
 .btn-next:hover {
-  border-color: lightgray;
-  background-color: gray;
-  /* color: lightsteelblue; */
+  border-color: rgb(216, 146, 146);
+  background-color: rgb(234, 199, 163);
 }
 
 .btn-answer-selected {
@@ -106,8 +150,7 @@ body {
 .container {
   width: 750px;
   height: 490px;
-  /* max-height: 100%; */
-  /* max-width: 100%; */
+  background-color: transparent;
   background-image: url(/Self_As_System/images/Tv.png);
   background-repeat: no-repeat;
   padding: 10px;
@@ -138,34 +181,22 @@ li {
 
 .answer {
   cursor: pointer;
+  margin: 0 auto;
+  font-size: 20px;
 }
 
-/* #result-container {
-  margin-top: 50px;
-} */
-
-/* #result-container { */
-/* margin-top: 50px;
-  background-size: cover;
-  background-position: center;
-  padding: 50px;
-  background-repeat: no-repeat; */
-/* background-color: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); */
-/* } */
-
-/* .image-1 {
-  background-image: url("/Image/FirstPage-01.jpg");
+.top_ani {
+  animation-duration: 1.5s;
+  animation-name: topslide;
+  animation-timing-function: ease;
 }
 
-.image-2 {
-  background-image: url("/Image/disappointed-gummy-bear.jpg");
+@keyframes topslide {
+  from {
+    transform: translateY(-100%);
+    /* You can also add opacity animation if needed */
+  }
+  to {
+    transform: translateY(0%);
+  }
 }
-
-.image-3 {
-  background-image: url("/Image/happy-gummy-bear.jpg");
-} */

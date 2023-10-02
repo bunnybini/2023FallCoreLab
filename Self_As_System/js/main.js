@@ -16,8 +16,8 @@ addEventListener("scroll", (e) => {
     zoom.style.transform = `scale(${scale})`;
     // zoom.style.transformtext = `scale(${scale})`;
     // Adjust the font size of the text based on the scale
-    const fontSize = 10 - (scrollTop - start) / 500; // Adjust this value as needed
-    zoomText.style.fontSize = `${fontSize}rem`;
+    // const fontSize = 10 - (scrollTop - start) / 500;
+    // zoomText.style.fontSize = `${fontSize}rem`;
     const textPosition = -(scrollTop - scrolltext);
     zoomText.style.transform = `translateY(${textPosition}px)`;
   }

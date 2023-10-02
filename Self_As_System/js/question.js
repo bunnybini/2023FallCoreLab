@@ -4,46 +4,46 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       question: "When should I wake up?",
       options: [
-        { text: "8:00 AM", percentage: 90 },
+        { text: "8:00 AM", percentage: 100 },
         { text: "11:00 AM", percentage: 85 },
-        { text: "01:00 PM", percentage: 50 },
+        { text: "01:00 PM", percentage: 60 },
       ],
     },
     {
       question: "My brain is awake, but not my body. What should I do?",
       options: [
-        { text: "Play with phone", percentage: 0 },
+        { text: "Play with the phone", percentage: 30 },
         {
           text: "Get up",
-          percentage: 10,
+          percentage: 90,
         },
       ],
     },
     {
       question: "I'm out of my bed. What should I do first?",
       options: [
-        { text: "Prepare breakfast", percentage: 30 },
+        { text: "Prepare breakfast", percentage: 50 },
         { text: "Remove makeup", percentage: 20 },
       ],
     },
     {
       question: "While I'm eating breakfast, what should I do?",
       options: [
-        { text: "Watch animation(20 mins)", percentage: 20 },
-        { text: "Netflix series(50 mins)", percentage: 40 },
-        { text: "Review homework", percentage: 35 },
+        { text: "Animation(20 mins)", percentage: 50 },
+        { text: "Netflix (50 mins)", percentage: 90 },
+        { text: "Review homework", percentage: 40 },
       ],
     },
     {
-      question: "The weather is fantasic today, should I go outside?",
+      question: "The weather is fantastic today, should I go outside?",
       options: [
-        { text: "YAY let's chill!", percentage: 40 },
-        { text: "Sure, but bring your computer", percentage: 20 },
+        { text: "YAY let's chill!", percentage: 50 },
+        { text: "Sure,but with computer", percentage: 20 },
         { text: "NO!", percentage: 0 },
       ],
     },
     {
-      question: "What kind of song should I listen while making 3d model?",
+      question: "What kind of song should I listen to while making 3D models?",
       options: [
         { text: "K-pop", percentage: 0 },
         { text: "Pop", percentage: 0 },
@@ -51,18 +51,18 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     {
-      question: "It's almost 8:00pm but I'm curving for food",
+      question: "It's almost 8:00 PM, but I'm craving food",
       options: [
-        { text: "It's too late to eat", percentage: 50 },
-        { text: "Go for spicy food", percentage: 0 },
-        { text: "Dessert is the best", percentage: 0 },
+        { text: "It's too late", percentage: 90 },
+        { text: "Spicy food", percentage: 0 },
+        { text: "Dessert", percentage: 0 },
       ],
     },
     {
       question: "Oh my gosh..I forgot to do my landruy",
       options: [
-        { text: "Do it right now", percentage: 60 },
-        { text: "Do your homework first", percentage: 10 },
+        { text: "Do it right now", percentage: 90 },
+        { text: "Homework first", percentage: 50 },
       ],
     },
     {
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
           text: "Yes, you are into it",
           percentage: 5,
         },
-        { text: "Well, get that phone out of your face", percentage: 5 },
+        { text: "Give me your phone", percentage: 5 },
       ],
     },
     {
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var option = currentQuestion.options[i];
       var button = document.createElement("button");
       button.textContent = option.text;
-      button.classList.add("btn");
+      button.classList.add("btn", "top_ani"); // Add "top_ani" class to each button
       button.addEventListener("click", createOptionClickListener(option));
 
       optionsElement.appendChild(button);
@@ -184,7 +184,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // ...
   // Function to display the final result
   function showResult() {
     // Hide the quiz container
@@ -194,32 +193,36 @@ document.addEventListener("DOMContentLoaded", function () {
     // Show the result container
     var resultContainer = document.getElementById("result-container");
     resultContainer.style.display = "block";
+
     // Calculate the stress level percentage based on the score
     var stressLevelPercentage = (score / (questions.length * 100)) * 100;
 
     // Display the stress level percentage
     resultElement.textContent =
-      "Your stress level: " + stressLevelPercentage.toFixed(2) + "%";
+      "My stress level: " + stressLevelPercentage.toFixed(2) + "%";
 
     // Add text based on the stress level percentage
     var textElement = document.createElement("p");
 
     if (stressLevelPercentage < 30) {
       textElement.textContent =
-        "Congratulations! Your stress level is low. Keep up the good work in managing your stress.";
+        "Wow, congratulations! My stress level is miraculously low. How impressive that you seem to know me so well!! Feel free to click on 'more detail' if you're dying to know how I managed to create this masterpiece with my data!";
     } else if (stressLevelPercentage < 70) {
       textElement.textContent =
-        "Your stress level is moderate. Consider practicing stress management techniques to improve your well-being.";
+        "Hmm, not too shabby... Let's hope we get to know each other even better. Don't hesitate to click on 'more detail' if you're curious about the intriguing story behind how I crafted this game with my data!";
     } else {
       textElement.textContent =
-        "Your stress level is high. It's important to take steps to reduce stress and seek support if needed.";
+        "Oh, I'm practically on the brink of death thanks to the stress you've generously gifted me! We definitely need to have a chat soon... If you dare, click on 'more detail' to discover the thrilling secrets about yours truly.";
 
       // Set the background image if needed
       document.body.style.backgroundImage = 'url("./Image/pawSAD.jpg")';
     }
 
     resultContainer.appendChild(textElement);
-    // resultContainer.style.backgroundImage = "none";
+
+    // Show the endingBox
+    var endingBox = document.querySelector(".endingBox");
+    endingBox.style.display = "flex";
   }
 
   // Show the guess page when all questions are answered

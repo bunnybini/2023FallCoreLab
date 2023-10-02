@@ -9,7 +9,7 @@
     <script defer src="/Self_As_System/js/question.js"></script>
   </head>
   <body>
-    <div class="container" id="quiz-container">
+    <div class="container top_ani" id="quiz-container">
       <h2 id="question"></h2>
 
       <ul id="answers" class="list-group">
@@ -33,11 +33,17 @@
         id="guess-input"
         placeholder="Enter your guess (0-100)"
       />
-      <button id="guess-btn" class="btn">Guess</button>
+      <button id="guess-btn" class="btn-guess-deco">Guess</button>
     </div>
 
-    <div class="container text-center hide" id="result-container">
+    <div class="container hide" id="result-container">
       <h2 id="result"></h2>
+    </div>
+    <div class="endingBox hide">
+      <button id="restart-btn" class="btn endingBtn"> <a href="/Self_As_System/context.html">Redo</a></span
+        ></button>
+      <button id="details-btn" class="btn endingBtn"><a href="/Self_As_System/research.html">More Details</a></button>
     </div>
   </body>
 </html>
+
