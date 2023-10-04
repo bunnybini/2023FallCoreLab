@@ -84,9 +84,24 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   ];
 
+  var contexts = [
+    "You woke up feeling refreshed and ready to start your day.",
+    "You're lying in bed with your brain buzzing, but your body is still asleep.",
+    "You woke up feeling refreshed and ready to start your day.",
+    "You're lying in bed with your brain buzzing, but your body is still asleep.",
+    "You woke up feeling refreshed and ready to start your day.",
+    "You're lying in bed with your brain buzzing, but your body is still asleep.",
+    "You woke up feeling refreshed and ready to start your day.",
+    "You're lying in bed with your brain buzzing, but your body is still asleep.",
+    "You woke up feeling refreshed and ready to start your day.",
+    "You're lying in bed with your brain buzzing, but your body is still asleep.",
+  ];
+
   var currentQuestionIndex = 0;
   var score = 0;
   var isAnswerSelected = false;
+
+  var contextTextElement = document.getElementById("contexts");
 
   // Get HTML elements
   var questionElement = document.getElementById("question");
@@ -105,6 +120,13 @@ document.addEventListener("DOMContentLoaded", function () {
   // Show the first question
   showQuestion();
 
+  // Call displayContext when the page loads
+  // displayContext();
+
+  function displayContext() {
+    // Display the context
+    contextTextElement.textContent = contexts[currentQuestionIndex];
+  }
   // Function to display the current question and options
   function showQuestion() {
     var currentQuestion = questions[currentQuestionIndex];
@@ -152,6 +174,14 @@ document.addEventListener("DOMContentLoaded", function () {
           this.classList.add("btn-answer-selected");
         }
       };
+    }
+
+    // Display the context if there are more questions to show
+    if (currentQuestionIndex < questions.length) {
+      displayContext();
+    } else {
+      // Hide the context when you reach the last question
+      contextTextElement.textContent = "";
     }
   }
 
@@ -232,6 +262,9 @@ document.addEventListener("DOMContentLoaded", function () {
     quizContainer.style.display = "none";
     var resultContainer = document.getElementById("result-container");
     resultContainer.style.display = "none";
+
+    var contextContainer = document.querySelector(".contextcontainer");
+    contextContainer.style.display = "none";
 
     // Show the guess container
     guessContainer.style.display = "block";

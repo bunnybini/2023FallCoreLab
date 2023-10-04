@@ -31,7 +31,7 @@ body {
   text-align: center;
   width: 100vw;
   height: 40vh;
-  background-image: linear-gradient(#e5c8f6, #fff6ee, #ffffff);
+  background-image: url(/Self_As_System/images/Startpage.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }

@@ -14,6 +14,7 @@ h2 {
   color: black;
   margin-top: 65px;
   width: 650px;
+  height: 50px;
   padding-left: 100px;
 }
 
@@ -22,8 +23,8 @@ a {
   color: darkorchid;
 }
 p {
-  font-size: 1.5rem;
-  color: gray;
+  font-size: 1.3rem;
+  color: rgb(55, 55, 55);
   padding: auto;
   margin: 0 auto;
   width: 600px;
@@ -45,7 +46,7 @@ body {
   width: 100vw;
   height: 40vh;
   /* background-color: bisque; */
-  background-image: linear-gradient(#e5c8f6, #fff6ee, #ffffff);
+  background-image: url(/Self_As_System/images/Startpage.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -74,6 +75,7 @@ input {
 /* Adjust button styles */
 .endingBtn {
   font-size: 20px;
+  color: gray;
   width: 150px; /* Adjust button width as needed */
 }
 
@@ -125,7 +127,8 @@ input {
 }
 
 .btn:hover {
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: color-burn; */
+  filter: grayscale(100%);
 }
 
 .btn-next:hover {
@@ -135,7 +138,7 @@ input {
 
 .btn-answer-selected {
   /* background-color: coral; */
-  mix-blend-mode: multiply;
+  filter: grayscale(100%);
 }
 
 .center-tittle {
@@ -155,7 +158,8 @@ input {
   background-repeat: no-repeat;
   padding: 10px;
   border-radius: 5px;
-  margin-top: 200px;
+  margin-top: 300px;
+  margin-bottom: 50px;
   /* box-shadow: 0 0 10px 2px; */
 }
 
@@ -170,9 +174,16 @@ input {
   /* box-shadow: 0 0 10px 2px; */
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  column-gap: 10px;
+}
+
 ul {
   list-style-type: none;
-  padding: 0;
+  font-size: 20px;
 }
 
 li {
@@ -185,6 +196,29 @@ li {
   font-size: 20px;
 }
 
+.contextcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 10px 2px;
+  background-color: #ffe8e8;
+  box-shadow: 0px 16px 5px #f1d2d2 inset;
+  box-shadow: 10px 10px 5px #a486c2;
+  height: 200px;
+  width: 800px;
+}
+
+#guess-input {
+  width: 250px;
+  box-shadow: 0px 5px 5px #f1d2d2 inset;
+  box-shadow: 5px 5px 5px #adabeb;
+  background-color: #ffe8e8;
+  border: 1px solid #e4c0c0;
+  border-radius: 5px;
+  padding: 30px;
+  justify-content: center;
+}
+
 .top_ani {
   animation-duration: 1.5s;
   animation-name: topslide;
@@ -194,7 +228,6 @@ li {
 @keyframes topslide {
   from {
     transform: translateY(-100%);
-    /* You can also add opacity animation if needed */
   }
   to {
     transform: translateY(0%);
